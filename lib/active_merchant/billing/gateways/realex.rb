@@ -24,11 +24,10 @@ module ActiveMerchant
       CARD_MAPPING = {
         'master'            => 'MC',
         'visa'              => 'VISA',
-        'american_express'  => 'AMEX',
         'diners_club'       => 'DINERS',
         'switch'            => 'SWITCH',
-        'solo'              => 'SWITCH',
-        'laser'             => 'LASER'
+        'solo'              => 'SWITCH'
+        
       }
 
       self.money_format = :cents
