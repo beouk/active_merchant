@@ -21,16 +21,13 @@ module ActiveMerchant
     class RealexGateway < Gateway
       self.live_url = self.test_url = 'https://epage.payandshop.com/epage-remote-gw.cgi'
 
-      CARD_MAPPING = {
+       CARD_MAPPING = {
         'master'            => 'MC',
         'visa'              => 'VISA',
-        'american_express'  => 'AMEX',
-        'diners_club'       => 'DINERS',
-        'switch'            => 'SWITCH',
-        'solo'              => 'SWITCH',
-        'laser'             => 'LASER',
-        'maestro'           => 'MC'
+        'american_express'  => 'AMEX'
+        
       }
+
 
       self.money_format = :cents
       self.default_currency = 'EUR'
